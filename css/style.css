@@ -5,6 +5,9 @@
 .icon-size{
     font-size: 50px;
 }
+.mobile{
+    font-size: 30px;
+}
 body{
     -webkit-touch-callout: none;
     -webkit-user-select: none;

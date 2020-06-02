@@ -30,7 +30,7 @@
             </div>
             <div class="w-100"></div>
             <div class="col text-center">
-                <div class="btn-group animated fadeInUp" role="group" aria-label="Basic example">
+                <div class="btn-group animated fadeInUp" role="group" aria-label="Basic example" id="net" > 
                     <button type="button" class="btn btn-lg icon-size"><a href="http://bit.ly/githubLeobardo" class="text-decoration-none text-light"><span class="twz00-github"></span></a></button>
                     <button type="button" class="btn btn-lg icon-size "><a href="http://bit.ly/facebookLeobardo" class="text-decoration-none text-light "><span class="twz00-facebook"></span></a></button>
                     <button type="button" class="btn btn-lg icon-size "><a href="http://bit.ly/twiiterLeobardo" class="text-decoration-none text-light "><span class="twz00-twitter"></span></a></button>
@@ -41,6 +41,34 @@
             <div class="w-100"></div>  
             <div class="col">
                 <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" id="toAbout">
+                    ABOUT ME
+                </div>
+            </div>
+        </div>
+        <div class="row" id="mobileView">
+            <div class="col">
+                <img src="img/Logo.jpg" alt="" class="img-fluid animated fadeInLeft">
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h1 class="text-light text-center font-weight-bold animated fadeInLeft" id="name">
+                    LEOBARDO
+                    <br>
+                    VERDUGO
+            </div>
+            <div class="w-100"></div>
+            <div class="col text-center">
+                <div class="btn-group animated fadeInUp" role="group" aria-label="Basic example" id="net" > 
+                    <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="http://bit.ly/githubLeobardo" class="text-decoration-none text-light"><span class="twz00-github"></span></a></button>
+                    <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="http://bit.ly/facebookLeobardo" class="text-decoration-none text-light "><span class="twz00-facebook"></span></a></button>
+                    <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="http://bit.ly/twiiterLeobardo" class="text-decoration-none text-light "><span class="twz00-twitter"></span></a></button>
+                    <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="https://bit.ly/linkedInLeobardo" class="text-decoration-none text-light "><span class="twz00-linkedin"></span></a></button>
+                    <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="https://bit.ly/discordLeobardo" class="text-decoration-none text-light "><span class="twz00-discord"></span></a></button>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" id="toAbout" onclick="about()">
                     ABOUT ME
                 </div>
             </div>
@@ -65,9 +93,31 @@
                 </div>
             </div>
         </div>
+        <div class="row align-items-center animated fast" id="aboutMobile">
+            <div class="col text-light">
+                <div class="display-4" id="backMobile" style="cursor: pointer;">
+                    &#8592;
+                </div>
+            </div>
+            <div class="w-100"></div>  
+            <div class="col">
+                <img src="img/me.jpg.png" alt="logo" class="img-fluid animated fadeInLeft" id="logo">
+            </div>
+            <div class="w-100"></div>
+            <div class="col" id="name">
+                <div class="animated fadeInLeft">
+                    <h1 class="text-light text-center font-weight-bold" id="name">
+                    DEVELOPER
+                    </h1>
+                    <p class="text-light lead"></p>
+                    <p class="text-light text-justify lead"><span id="ageMobile"></span> years old Mexican actually IBMer. <br>Worked with java(servlets, android studio, spring boot - web services), c#(unity, basics), web pages(HTML, CSS, Bootstrap), javascript(basics, angular-basics), databases(MongoDB, MySQL), git(basics) and metodologies(agile-scrum). <br>Apparently winner of $1,000,000(fake money :'c) in the game "deal or no deal" online :D</p>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         document.getElementById("about").style.display = "none";
+        document.getElementById("aboutMobile").style.display = "none";
         document.getElementById("toAbout").addEventListener("click",function(){
             document.getElementById("desktopView").classList.remove("fadeInLeft");
             document.getElementById("desktopView").classList.add("fadeOutRight");
@@ -79,6 +129,16 @@
             },250);
         });
         document.getElementById("back").addEventListener("click",function(){
+            if(document.getElementById("desktopView")=== null){
+                document.getElementById("about").classList.remove("fadeInLeft");
+                document.getElementById("about").classList.add("fadeOutRight");
+                setTimeout(function(){
+                    document.getElementById("about").style.display ="none";
+                    document.getElementById("mobileView").style.display ="flex";
+                    document.getElementById("about").classList.remove("fadeOutRight");
+                },250);
+            }
+            else{
             document.getElementById("about").classList.remove("fadeInLeft");
             document.getElementById("about").classList.add("fadeOutRight");
             setTimeout(function(){
@@ -86,14 +146,22 @@
                 document.getElementById("desktopView").style.display ="flex";
                 document.getElementById("about").classList.remove("fadeOutRight");
             },250);
+            }
         });
+        document.getElementById("backMobile").addEventListener("click",function(){
+            document.getElementById("aboutMobile").classList.remove("fadeInLeft");
+            document.getElementById("aboutMobile").classList.add("fadeOutRight");
+            setTimeout(function(){
+                document.getElementById("aboutMobile").style.display ="none";
+                document.getElementById("mobileView").style.display ="flex";
+                document.getElementById("aboutMobile").classList.remove("fadeOutRight");
+            },250);
+        });
+
         document.getElementById("age").innerText = getAge();
+        document.getElementById("ageMobile").innerText = getAge();
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            var logo = document.getElementById("logo");
-            document.getElementById("desktopView").remove();
-            var element = document.createElement("div");
-            element.appendChild(logo);
-            document.getElementById("container").appendChild(element);
+            document.getElementById('desktopView').remove();
         }
         function getAge(){
             var age = 1998-(new Date()).getFullYear();
@@ -101,6 +169,19 @@
         }
         function back(){
             console.log(this);
+        }
+        function about(){
+            document.getElementById("toAbout").addEventListener("click",function(){
+            //alert('hola mundo');
+            document.getElementById("mobileView").classList.remove("fadeInLeft");
+            document.getElementById("mobileView").classList.add("fadeOutRight");
+            setTimeout(function(){
+                document.getElementById("mobileView").style.display ="none";
+                document.getElementById("mobileView").classList.remove("fadeOutRight");
+                document.getElementById("aboutMobile").style.display = "flex"
+                document.getElementById("aboutMobile").classList.add("fadeInLeft");
+            },250);
+        });
         }
     </script>
 </body>

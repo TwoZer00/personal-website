@@ -4761,7 +4761,12 @@ input[type="button"].btn-block {
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-titleP
+{
+  margin-bottom: 0.25rem;
 }
 
 .card-subtitle {

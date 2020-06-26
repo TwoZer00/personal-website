@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 animated" id="portfolio" style="display: none;">
+    <div class="row row-cols-1 row-cols-lg-2 animated" id="portfolio" style="display: none; max-height: 100vh;">
         <div class="col text-light">
             <div class="display-4" id="back1" style="cursor: pointer;">
                 &#8592;
@@ -117,14 +117,14 @@
         </div>
         <div class="col mb-4 animated fadeInLeft delay-2s">
             <div class="card h-100">
-            <img src="img/maxii.png" class="card-img-top" alt="epidemic-watcher-Logo">
-            <div class="card-body">
-                <span class="badge badge-dark">Android</span>
-                <span class="badge badge-dark">JAVA</span>
-                <h5 class="card-title">Maxii</h5>
-                <p class="card-text text-justify">Android native app to search movies, series, tv shows and actors.Also you rate them using <a href="https://www.themoviedb.org/" target="_blank">TheMovieDB API</a>.</p>
-                <a href="https://github.com/Two-Zer00/Maxii" class="btn btn-outline-dark" target="_blank">View more</a>
-            </div>
+                <img src="img/maxii.png" class="card-img-top" alt="epidemic-watcher-Logo">
+                <div class="card-body">
+                    <span class="badge badge-dark">Android</span>
+                    <span class="badge badge-dark">JAVA</span>
+                    <h5 class="card-title">Maxii</h5>
+                    <p class="card-text text-justify">Android native app to search movies, series, tv shows and actors.Also you rate them using <a href="https://www.themoviedb.org/" target="_blank">TheMovieDB API</a>.</p>
+                    <a href="https://github.com/Two-Zer00/Maxii" class="btn btn-outline-dark" target="_blank">View more</a>
+                </div>
             </div>
         </div>
         <div class="col mb-4 animated fadeInLeft delay-3s">
@@ -188,9 +188,6 @@
     <script>
         document.getElementById("about").style.display = "none";
         document.getElementById("aboutMobile").style.display = "none";
-        /*document.getElementById("toAbout").addEventListener("click",function(){
-            console.log
-        });*/
         document.getElementById("back").addEventListener("click",function(){
             if(document.getElementById("desktopView")=== null){
                 
@@ -235,6 +232,7 @@
                 document.getElementById("portfolio").style.display ="none";
                 document.getElementById("desktopView").style.display ="flex";
                 document.getElementById("portfolio").classList.remove("fadeOut");
+                document.getElementById("container").style.height = "100vh";
             },250);
             }
         });
@@ -263,15 +261,15 @@
             console.log(this);
         }
         function portfolio(){
-            console.log("Hola");
+            document.getElementById("container").style.height = "auto";
             if(document.getElementById("desktopView")!=null){
                 document.getElementById("desktopView").style.display = "none";
+                
                 
             }
             else{
                 document.getElementById("mobileView").style.display = "none";
                 document.getElementById("container").classList.remove("vertical-align");
-                document.getElementById("container").style.height = "auto";
             }
             
             document.getElementById("portfolio").style.display = "flex";

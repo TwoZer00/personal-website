@@ -43,7 +43,7 @@
                 <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" id="toAbout">
                     ABOUT ME
                 </div>
-                <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" id="toAbout" onclick="portfolio()">
+                <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" onclick="portfolio()">
                     PORTFOLIO 
                 </div>
             </div>
@@ -243,6 +243,16 @@
                 document.getElementById("aboutMobile").style.display ="none";
                 document.getElementById("mobileView").style.display ="flex";
                 document.getElementById("aboutMobile").classList.remove("fadeOutRight");
+            },250);
+        });
+        document.getElementById("toAbout").addEventListener("click",()=>{
+            document.getElementById("desktopView").classList.remove("fadeInLeft");
+            document.getElementById("desktopView").classList.add("fadeOutRight");
+            setTimeout(function(){
+                document.getElementById("desktopView").style.display ="none";
+                document.getElementById("desktopView").classList.remove("fadeOutRight");
+                document.getElementById("about").style.display = "flex"
+                document.getElementById("about").classList.add("fadeInLeft");
             },250);
         });
         document.getElementById("age").innerText = getAge();

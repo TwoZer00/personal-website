@@ -1,35 +1,36 @@
-.vertical-align{
-    display: flex;
-    align-items: center;
+.vertical-align {
+  display: flex;
+  align-items: center;
 }
-.icon-size{
-    font-size: 50px;
+.icon-size {
+  font-size: 50px;
 }
-.mobile{
-    font-size: 30px;
+.mobile {
+  font-size: 30px;
 }
-body{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: black;
 }
 #name span {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-    }
-#name *{
-    min-height: 50px;
-    color: white;
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
 }
-#name a:hover{
-    cursor: default;
-    text-decoration: none;
+#name * {
+  min-height: 50px;
+  color: white;
+}
+#name a:hover {
+  cursor: default;
+  text-decoration: none;
 }
 @keyframes caret {
-    50% {
-        border-color: transparent;
-    }
-}   
+  50% {
+    border-color: transparent;
+  }
+}

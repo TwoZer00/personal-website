@@ -1,0 +1,58 @@
+[
+    {
+        "title":"Mexican Runner",
+        "desc":"Make Mexicans great again",
+        "tags":
+            [
+                "videogames",
+                "mobile",
+                "web",
+                "Unity"
+            ],
+        "image":"/img/MexicanRunner.jpg",
+        "link": "https://mexicanrunner.twozer00.dev/",
+        "status": 1
+    },
+    {
+        "title":"Epidemic Watcher",
+        "desc":"Application capable of registering patients with epidemic diseases and displaying the records on a world map. Using AI, models are generated to predict the growth of the disease. Available in web and mobile devices",
+        "tags":
+            [
+                "web app",
+                "machine learning",
+                "web services",
+                "mongoDB"
+            ],
+        "image":"/img/epidemic-watcher.jpg",
+        "link": "https://github.com/Two-Zer00/mapboxView",
+        "status": 2
+    },
+    {
+        "title":"Maxii",
+        "desc":"Android application to search for movies, series, anime and actors, ratings and grade them using TheMovieDB API",
+        "tags":
+            [
+                "android",
+                "java",
+                "API"
+            ],
+        "image":"/img/maxii.png",
+        "link":"https://github.com/Two-Zer00/Maxii",
+        "status":2
+    },
+    
+    {
+        "title":"Banco Mercantíl de México (no real organization)",
+        "desc":"Using servlets, html, css, js, an application with the actions of a bank. Create account, transfers, check balances, check accounts, all this with static information in json",
+        "tags":
+            [
+                "servlets",
+                "web app",
+                "HTML",
+                "Javascript"
+            ],
+        "image":"/img/LogoBMM.jpg",
+        "link":"https://github.com/CarlosD98/Evindecia2DAW",
+        "status":0
+    }
+]

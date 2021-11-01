@@ -1,418 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TwoZer00</title>
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script data-ad-client="ca-pub-2469067640186892" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>My personal website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 </head>
-<body>
-    <div class="container-lg vertical-align" style="max-height: 100vh; overflow: hidden;" id="container">
-    <div class="row align-items-center animated fadeInLeft fast" id="desktopView">
-            <div class="col">
-                <img src="img/Logo.jpg" alt="logo" class="img-fluid" id="logo">
-            </div>
-            <div class="col" id="name">
-                <h1 class="text-light text-center fw-bold  text-uppercase" id="name">
-                    <a href="javascript:void(0)" class="typewrite text-decoration-none" style="font-size: 100px;"  data-period="2000" data-type='[ "Leobardo Verdugo", "TwoZer00", "DEVELOPER" ]'>
-                        <span class="wrap"></span>
-                      </a>
-                </h1>
-            </div>
-            <div class="w-100"></div>
-            <div class="col text-center animated fadeInUp delay-1s fast" id="net">
-                <div class="btn-group" role="group" id="net" style="max-height: 55px;"> 
-                    <button type="button" class="btn btn-lg icon-size p-0"><a href="http://bit.ly/githubLeobardo" target="_blank" class="text-decoration-none text-light"><span class="twz00-github"></span></a></button>
-                    <button type="button" class="btn btn-lg icon-size p-0"><a href="http://bit.ly/FBLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-facebook"></span></a></button>
-                    <button type="button" class="btn btn-lg icon-size p-0"><a href="http://bit.ly/twitterLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-twitter"></span></a></button>
-                    <button type="button" class="btn btn-lg icon-size p-0"><a href="https://bit.ly/linkedInLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-linkedin"></span></a></button>
-                    <button type="button" class="btn btn-lg icon-size p-0"><a href="https://bit.ly/discordLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-discord"></span></a></button>
+
+<body style="background-color: rgb(26, 30, 32); height: fit-content;">
+    <nav class="navbar navbar-light bg-dark shadow-sm container">
+        <div class="d-flex justify-content-center w-100">
+            <a class="pe-none user-select-none nav-item" href="#">
+                <img src="img/Logo.jpg" alt="TwoZer00" class="rounded-circle" height="50px" width="50px">
+            </a>
+        </div>
+    </nav>
+    <div class="container bg-dark">
+        <div class="container d-flex justify-content-center pt-3 mb-5">
+            <section class="row">
+                <div class="col-auto">
+                    <img src="img/me.jpg.png" alt="Leobardo Verdugo" class="img-fluid img-thumbnail rounded-circle">
                 </div>
-            </div>
-            <div class="w-100"></div>  
-            <div class="col animated fadeInUp delay-1s fast" id="actions">
-                <div class="text-light text-center fw-bold" style="font-size:20px ; cursor: pointer;" id="toAbout">
-                    ABOUT ME
+                <div class="col-lg">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div>
+                            <div id="social">
+                                <a href="http://bit.ly/githubLeobardo"
+                                    class="bi bi-github text-decoration-none text-light fs-4 mx-1" target="_blank"></a>
+                                <a href="http://bit.ly/FBLeobardo"
+                                    class="bi bi-facebook text-decoration-none text-light fs-4 mx-1"
+                                    target="_blank"></a>
+                                <a href="http://bit.ly/twitterLeobardo"
+                                    class="bi bi-twitter text-decoration-none text-light fs-4 mx-1" target="_blank"></a>
+                                <a href="https://bit.ly/linkedInLeobardo"
+                                    class="bi bi-linkedin text-decoration-none text-light fs-4 mx-1"
+                                    target="_blank"></a>
+                                <a href="https://bit.ly/discordLeobardo"
+                                    class="bi bi-discord text-decoration-none text-light fs-4 mx-1" target="_blank"></a>
+                                <a href="mailto: leobardo.verdugo@twozer00.dev"
+                                    class="bi bi-envelope-fill text-decoration-none text-light fs-4 mx-1"></a>
+                            </div>
+                            <h1 class="text-light fw-bold">Leobardo Verdugo</h1>
+                            <p class="text-light fs-5"><span id="age">23</span>
+                                years old Mexican working in IBM. <br>Worked
+                                with
+                                java(servlets, android studio, spring boot - web services), c#(unity, basics), web
+                                pages(HTML,
+                                CSS,
+                                Bootstrap), javascript(basics, angular-basics), databases(MongoDB, MySQL), git(basics)
+                                and
+                                metodologies(agile-scrum).</p>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="text-light text-center fw-bold" style="font-size:20px ; cursor: pointer;" onclick="portfolio()">
-                    PORTFOLIO 
-                </div>
+            </section>
+        </div>
+        <div class="container-sm">
+            <div id="portfolio">
+                <p class="text-light text-center fw-bold fs-3">Portfolio</p>
             </div>
+            <div class="container d-flex justify-content-center pb-5">
+                <section class="row row-cols-1 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card bg-transparent">
+                            <img src="img/aprojectA.png" class="card-img-top bg-danger" alt="Project A">
+                            <div class="card-body text-light">
+                                <span class="badge rounded-pill bg-light text-dark">Javascript</span>
+                                <span class="badge rounded-pill bg-light text-dark">Firebase</span>
+                                <span class="badge rounded-pill bg-light text-dark">Bootstrap</span>
+                                <span class="badge rounded-pill bg-light text-dark">HTML</span>
+                                <span class="badge rounded-pill bg-light text-dark">CSS</span>
+                                <span class="badge rounded-pill bg-light text-dark">Web app</span>
+                                <div id="title">
+                                    <h5 class="card-title d-inline">Project A</h5>
+                                    <span class="rounded-circle p-1 border border-light d-inline-block bg-success"
+                                        title="available"></span>
+                                </div>
+
+                                <p class="card-text">Web app in vanilla javascript where you can post audio files.</p>
+                                <a href="https://aproject.twozer00.dev/" class="btn btn-outline-light"
+                                    target="_blank">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent">
+                            <img src="img/Mexican.jpg" class="card-img-top" alt="Mexican Runner">
+                            <div class="card-body text-light">
+                                <span class="badge rounded-pill bg-light text-dark">Unity</span>
+                                <span class="badge rounded-pill bg-light text-dark">Android game</span>
+                                <div id="title">
+                                    <h5 class="card-title d-inline">Mexican Runner</h5>
+                                    <span class="rounded-circle p-1 border border-light d-inline-block bg-success"
+                                        title="available"></span>
+                                </div>
+                                <p class="card-text">Endless running game made in unity.
+                                </p>
+                                <a href="https://mexicanrunner.twozer00.dev/" class="btn btn-outline-light"
+                                    target="_blank">View
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent">
+                            <img src="img/epidemic-watcher.jpg" class="card-img-top" alt="Epidemic Watcher">
+                            <div class="card-body text-light">
+                                <span class="badge rounded-pill bg-light text-dark">Web app</span>
+                                <span class="badge rounded-pill bg-light text-dark">Web services</span>
+                                <span class="badge rounded-pill bg-light text-dark">Spring boot</span>
+                                <span class="badge rounded-pill bg-light text-dark">Bootstrap</span>
+                                <span class="badge rounded-pill bg-light text-dark">Mapbox</span>
+                                <span class="badge rounded-pill bg-light text-dark">HTML</span>
+                                <span class="badge rounded-pill bg-light text-dark">CSS</span>
+                                <span class="badge rounded-pill bg-light text-dark">Mongo</span>
+                                <span class="badge rounded-pill bg-light text-dark">Javascript</span>
+                                <div id="title">
+                                    <h5 class="card-title d-inline">Epidemic Watcher</h5>
+                                    <span class="rounded-circle p-1 border border-light d-inline-block bg-success"
+                                        title="available"></span>
+                                </div>
+                                <p class="card-text">Web application capable of registering patients with epidemic
+                                    diseases
+                                    and
+                                    displaying the records on a world map. Using AI, models are generated to predict the
+                                    growth of the disease.</p>
+                                <a href="https://epidemic-watcher.twozer00.dev/" class="btn btn-outline-light"
+                                    target="_blank">View
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent">
+                            <img src="img/maxii.png" class="card-img-top" alt="Maxii">
+                            <div class="card-body text-light">
+                                <span class="badge rounded-pill bg-light text-dark">Android app</span>
+                                <span class="badge rounded-pill bg-light text-dark">TheMovieDB API</span>
+                                <div id="title">
+                                    <h5 class="card-title d-inline">Maxii</h5>
+                                    <span class="rounded-circle p-1 border border-light d-inline-block bg-warning"
+                                        title="available"></span>
+                                </div>
+                                <p class="card-text">Android application to search for movies, series, anime and actors,
+                                    ratings and grade them using TheMovieDB API.</p>
+                                <a href="https://github.com/Two-Zer00/projectM" class="btn btn-outline-light"
+                                    target="_blank">View
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent">
+                            <img src="img/LogoBMM2.png" class="card-img-top bg-light" alt="BMM">
+                            <div class="card-body text-light">
+                                <span class="badge rounded-pill bg-light text-dark">Servlets</span>
+                                <span class="badge rounded-pill bg-light text-dark">Json</span>
+                                <span class="badge rounded-pill bg-light text-dark">Java</span>
+                                <span class="badge rounded-pill bg-light text-dark">HTML</span>
+                                <span class="badge rounded-pill bg-light text-dark">CSS</span>
+                                <span class="badge rounded-pill bg-light text-dark">Javascript</span>
+                                <span class="badge rounded-pill bg-light text-dark">Chart js</span>
+                                <div id="title">
+                                    <h5 class="card-title d-inline">Banco Mercantil de Mexico(Fictional organization)
+                                    </h5>
+                                    <span class="rounded-circle p-1 border border-light d-inline-block bg-warning"
+                                        title="code available"></span>
+                                </div>
+                                <p class="card-text">Using servlets, html, css, js, an application with the actions of a
+                                    bank. Create account, transfers, check balances, check accounts, all this with
+                                    static
+                                    information in json.</p>
+                                <a href="https://github.com/CarlosD98/Evindecia2DAW" class="btn btn-outline-light"
+                                    target="_blank">View
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
-    <div class="row animated" id="mobileView">
-        <div class="col">
-            <img src="img/Logo.jpg" alt="" class="img-fluid animated fadeInLeft">
-        </div>
-        <div class="w-100"></div>
-        <div class="col">
-            <h1 class="text-light text-center font-weight-bold animated fadeInLeft text-uppercase" id="name">
-                <a href="javascript:void(0)" class="typewrite" data-period="2000" data-type='[ "Leobardo Verdugo", "TwoZer00", "DEVELOPER" ]'>
-                    <span class="wrap"></span>
-                  </a>
-            </h1>
-        </div>
-        <div class="w-100"></div>
-        <div class="col text-center animated fadeInUp" id="net">
-            <div class="btn-group" role="group" aria-label="Basic example" id="net" > 
-                <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="http://bit.ly/githubLeobardo" target="_blank" class="text-decoration-none text-light"><span class="twz00-github"></span></a></button>
-                <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="http://bit.ly/FBLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-facebook"></span></a></button>
-                <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="http://bit.ly/twitterLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-twitter"></span></a></button>
-                <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="https://bit.ly/linkedInLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-linkedin"></span></a></button>
-                <button type="button" class="btn btn-lg m-0 p-1 mobile"><a href="https://bit.ly/discordLeobardo" target="_blank" class="text-decoration-none text-light "><span class="twz00-discord"></span></a></button>
-            </div>
-        </div>
-        <div class="w-100"></div>
-        <div class="col animated fadeInUp" id="actions">
-            <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" id="toAbout" onclick="about()">
-                ABOUT ME
-            </div>
-            <div class="text-light text-center font-weight-bold animated fadeInUp" style="font-size:20px ; cursor: pointer;" id="toPortfolio" onclick="portfolio()">
-                PORTFOLIO
-            </div>
-        </div>
-    </div>
-    <div class="row animated" id="portfolio" style="display: none; max-height: 100vh;">
-        <div class="col text-light">
-            <div class="display-4" id="back1" style="cursor: pointer;">
-                &#8592;
-            </div>
-        </div>
-        <div class="w-100"></div>
-    </div>
-    <div class="row align-items-center animated fast" id="about">
-        <div class="col text-light">
-            <div class="display-4" id="back" style="cursor: pointer;">
-                &#8592;
-            </div>
-        </div>
-        <div class="w-100"></div>  
-        <div class="col">
-            <img src="img/me.jpg.png" alt="logo" class="img-fluid animated fadeInLeft" id="logo">
-        </div>
-        <div class="col">
-            <div class="animated fadeInLeft">
-                <h1 class="text-light text-center font-weight-bold" id="name">
-                DEVELOPER
-                </h1>
-                <p class="text-light lead"></p>
-                <p class="text-light text-justify lead"><span id="age"></span> years old Mexican working in IBM. <br>Worked with java(servlets, android studio, spring boot - web services), c#(unity, basics), web pages(HTML, CSS, Bootstrap), javascript(basics, angular-basics), databases(MongoDB, MySQL), git(basics) and metodologies(agile-scrum). <br>Apparently winner of $1,000,000(fake money :'c) in the game "deal or no deal" online :D</p>
-            </div>
-        </div>
-    </div>
-    <div class="row align-items-center animated fast" id="aboutMobile">
-        <div class="col text-light">
-            <div class="display-4" id="backMobile" style="cursor: pointer;">
-                &#8592;
-            </div>
-        </div>
-        <div class="w-100"></div>  
-        <div class="col">
-            <img src="img/me.jpg.png" alt="logo" class="img-fluid animated fadeInLeft" id="logo">
-        </div>
-        <div class="w-100"></div>
-        <div class="col">
-            <div class="animated fadeInLeft">
-                <h1 class="text-light text-center font-weight-bold" id="name">
-                DEVELOPER
-                </h1>
-                <p class="text-light lead"></p>
-                <p class="text-light text-justify lead"><span id="ageMobile"></span> years old Mexican working in IBM. <br>Worked with java(servlets, android studio, spring boot - web services), c#(unity, basics), web pages(HTML, CSS, Bootstrap), javascript(basics, angular-basics), databases(MongoDB, MySQL), git(basics) and metodologies(agile-scrum). <br>Apparently winner of $1,000,000(fake money :'c) in the game "deal or no deal" online :D</p>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            document.getElementById('desktopView').remove();
-        }
-        else{
-            document.getElementById('mobileView').remove();
-        }
-        document.getElementById("about").style.display = "none";
-        document.getElementById("aboutMobile").style.display = "none";
-        document.getElementById("back").addEventListener("click",function(){
-            if(document.getElementById("desktopView")=== null){
-                
-                document.getElementById("about").classList.remove("fadeInLeft");
-                document.getElementById("about").classList.add("fadeOutRight");
-                setTimeout(function(){
-                    document.getElementById("about").style.display ="none";
-                    document.getElementById("mobileView").style.display ="flex";
-                    document.getElementById("mobileView").classList.remove("fadeOutRight");
-                    document.getElementById("mobileView").classList.add("fadeInLeft");
-                    document.getElementById("about").classList.remove("fadeOutRight");
-                },250);
-                
-            }
-            else{
-                document.getElementById("about").classList.remove("fadeInLeft");
-                document.getElementById("about").classList.add("fadeOutRight");
-                setTimeout(function(){
-                    document.getElementById("about").style.display ="none";
-                    document.getElementById("desktopView").style.display ="flex";
-                    document.getElementById("desktopView").classList.remove("fadeOutRight");
-                    document.getElementById("desktopView").classList.add("fadeInLeft");
-                    document.getElementById("about").classList.remove("fadeOutRight");
-                },250);
-            }
-        
-        });
-        document.getElementById("back1").addEventListener("click",function(){
-            if(document.getElementById("desktopView")=== null){
-                
-                document.getElementById("portfolio").classList.remove("fadeInLeft");
-                document.getElementById("portfolio").classList.add("fadeOut");
-                setTimeout(function(){
-                    document.getElementById("portfolio").style.display ="none";
-                    document.getElementById("mobileView").style.display ="flex";
-                    document.getElementById("portfolio").classList.remove("fadeOut");
-                    document.getElementById("container").classList.add("vertical-align");
-                    document.getElementById("container").style.height = "100vh";
-                },250);
-                
-            }
-            else{
-            document.getElementById("portfolio").classList.remove("fadeInLeft");
-            document.getElementById("portfolio").classList.add("fadeOut");
-            setTimeout(function(){
-                document.getElementById("portfolio").style.display ="none";
-                document.getElementById("desktopView").style.display ="flex";
-                document.getElementById("portfolio").classList.remove("fadeOut");
-                document.getElementById("container").style.height = "100vh";
-            },250);
-            }
-        });
-        document.getElementById("backMobile").addEventListener("click",function(){
-            document.getElementById("aboutMobile").classList.remove("fadeInLeft");
-            document.getElementById("aboutMobile").classList.add("fadeOutRight");
-            setTimeout(function(){
-                document.getElementById("aboutMobile").style.display ="none";
-                document.getElementById("mobileView").style.display ="flex";
-                document.getElementById("aboutMobile").classList.remove("fadeOutRight");
-            },250);
-        });
-        document.getElementById("toAbout").addEventListener("click",()=>{
-            document.getElementById("desktopView").classList.remove("fadeInLeft");
-            document.getElementById("desktopView").classList.add("fadeOutRight");
-            setTimeout(function(){
-                document.getElementById("desktopView").style.display ="none";
-                document.getElementById("desktopView").classList.remove("fadeOutRight");
-                document.getElementById("net").classList.remove("fadeInUp");
-                document.getElementById("actions").classList.remove("fadeInUp");
-                document.getElementById("about").style.display = "flex"
-                document.getElementById("about").classList.add("fadeInLeft");
-            },250);
-        });
-        document.getElementById("age").innerText = getAge();
-        document.getElementById("ageMobile").innerText = getAge();
-
-        function getAge(){
-            var age = 1998-(new Date()).getFullYear();
-            return Math.abs(age);
-        }
-        function back(){
-            console.log(this);
-        }
-        function portfolio(){
-            document.getElementById("container").style.height = "auto";
-            if(document.getElementById("desktopView")!=null){
-                document.getElementById("desktopView").style.display = "none";
-                document.getElementById("net").classList.remove("fadeInUp");
-                document.getElementById("actions").classList.remove("fadeInUp");
-                
-                
-            }
-            else{
-                document.getElementById("mobileView").style.display = "none";
-                document.getElementById("container").classList.remove("vertical-align");
-            }
-            
-            document.getElementById("portfolio").style.display = "flex";
-        }
-        function about(){
-            console.log(2);
-            document.getElementById("mobileView").classList.remove("fadeInLeft");
-            document.getElementById("mobileView").classList.add("fadeOutRight");
-            setTimeout(function(){
-                document.getElementById("mobileView").style.display ="none";
-                document.getElementById("mobileView").classList.remove("fadeOutRight");
-                document.getElementById("net").classList.remove("fadeInUp");
-                document.getElementById("actions").classList.remove("fadeInUp");
-                document.getElementById("aboutMobile").style.display = "flex"
-                document.getElementById("aboutMobile").classList.add("fadeInLeft");
-            },250);
-        }
-        
-        var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-        TxtType.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-            }
-
-            setTimeout(function() {
-            that.tick();
-            }, delta);
-        };
-
-        window.onload = function() {
-            setTimeout(()=>{
-                var elements = document.getElementsByClassName('typewrite');
-                for (var i=0; i<elements.length; i++) {
-                    var toRotate = elements[i].getAttribute('data-type');
-                    var period = elements[i].getAttribute('data-period');
-                    if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                    }
-                }
-                // INJECT CSS
-                var css = document.createElement("style");
-                css.type = "text/css";
-                css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-                document.body.appendChild(css);
-            },1000);
-        };
-
-        let gContainer = document.getElementById("portfolio");
-        fetch("json/portfolio.json")
-        .then(response => response.json())
-        .then(json =>{
-        json.forEach(element => {
-            addElement(element,gContainer);
-        });
-        });
-
-    function addElement(element,parent){
-      let col = document.createElement("div");
-      col.classList.add("col-md");
-
-      let card = document.createElement("div");
-      card.classList.add("card","bg-light","h-100");
-
-      let img = document.createElement("img");
-      img.classList.add("card-img-top");
-      img.src = element.image;
-
-      card.appendChild(img);
-
-      let body = document.createElement("div");
-      body.classList.add("card-body");
-
-      element.tags.forEach(tag => {
-        let span = document.createElement("span");
-        span.classList.add('badge','rounded-pill','bg-dark');
-        span.textContent = tag.toUpperCase();
-        body.appendChild(span);
-      });
-
-      let titleStatus = document.createElement("div");
-      titleStatus.classList.add("d-block");
-
-      let h5 = document.createElement("h5");
-      h5.classList.add("card-title","d-inline-block");
-      h5.textContent = element.title;
-
-      titleStatus.appendChild(h5);
-      let status = document.createElement("span");
-      status.classList.add("rounded-circle", "border", "border-light","p-1","d-inline-block");
-
-      switch (element.status) {
-        case 1:
-          status.classList.add("bg-success");
-          status.title = "Available";
-          break;
-        case 2:
-          status.classList.add("bg-warning");
-          status.title = "Code available";
-          break;
-        case 0:
-          status.classList.add("bg-secondary");
-          status.title = "Unavailable";
-          break;
-        default:
-          status.classList.add("bg-light");
-          status.title = "No status";
-          break;
-      }
-      h5.appendChild(status)
-      titleStatus.appendChild(h5);
-
-      body.appendChild(titleStatus);
-
-      let p = document.createElement("p");
-      p.classList.add("card-text");
-      p.textContent = element.desc + ".";
-
-      body.appendChild(p);
-
-      let button = document.createElement("a");
-      button.classList.add("btn","btn-outline-dark");
-      button.href = element.link;
-      button.setAttribute("target","_blank");
-      button.textContent = "View more";
-
-
-      body.appendChild(button);
-
-      card.appendChild(body);
-
-      col.appendChild(card);
-
-      
-
-      parent.appendChild(col);
-    }
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

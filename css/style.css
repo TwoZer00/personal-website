@@ -37,8 +37,12 @@ body {
 
 :root {
   --pa-logo: #8e02b1;
+  --pswGen-logo: #663366;
 }
 
 .bg-pa-logo {
   background-color: var(--pa-logo);
+}
+.bg-pswGen-logo {
+  background-color: var(--pswGen-logo);
 }
